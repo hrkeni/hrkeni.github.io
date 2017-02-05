@@ -1,0 +1,108 @@
+# Site configuration
+# 1. Files excluded from Jekyll builds
+# 2. Installed Gems
+# 3. Gem settings
+# 4. Jekyll settings
+# 5. Collections
+# 6. Jekyll collections settings
+# 7. Site settings
+# 8. Site navigation
+
+# 1. Files excluded from Jekyll builds
+exclude:
+- README.md
+- screenshot.png
+- LICENSE
+- CNAME
+- Gemfile
+- Gemfile.lock
+- demo/*
+- alembic-jekyll-theme.gemspec
+
+# 2. Installed Gems
+gems:
+- jekyll-sitemap
+- jekyll-mentions
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-redirect-from
+- jekyll-feed
+- jemoji
+
+# 3. Gem settings
+paginate: 5 # jekyll-paginate > items per page
+paginate_path: blog/page:num # jekyll-paginate > blog page
+jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
+twitter:
+  username: hrkeni # jekyll-seo-tag > Owners twitter username
+author: hrkeni # jekyll-seo-tag > default author
+social: # jekyll-seo-tag > social overrides
+  name: Harshith Keni # jekyll-seo-tag > real name
+  links:  # jekyll-seo-tag > social aliases (sameAs)
+    - https://twitter.com/hrkeni
+    - https://www.facebook.com/hrkeni
+    - https://www.linkedin.com/in/hrkeni
+    - https://github.com/hrkeni
+
+# 4. Jekyll settings
+sass:
+  style: compressed # Style compression
+permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
+excerpt_separator: <!-- more --> # Marks end of excerpt in posts
+timezone: US/Central # Timezone for blog posts and alike
+
+# 5. Collections
+collections:
+  posts:
+    output: true
+
+# 6. Jekyll collections settings
+defaults:
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: page # Default layout
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post # Default layout
+
+# 7. Site settings
+encoding: utf-8 # Make sure the encoding is right
+title: "Harshith Keni" # Site name or title, also used in jekyll-seo-tag
+logo: "/assets/logo-me.svg" # Site logo, also used in jekyll-seo-tag
+description: "I'm Harshith Keni, a software developer that lives in Sioux Falls, SD." # Site description and default description, also used in jekyll-seo-tag
+url: "http://hrkeni.me" # Site url, also used in jekyll-seo-tag
+repo: "https://github.com/hrkeni/hrkeni.github.io"
+email: "mail@hrkeni.me"
+# disqus: "alembic-1"
+# avatarurl: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
+
+# 8. Site navigation
+navigation_header:
+  Home: /
+  About: /about
+
+
+social_links:
+  Twitter: https://twitter.com/hrkeni
+  LinkedIn: https://www.linkedin.com/in/hrkeni
+  GitHub: https://github.com/hrkeni
+  Facebook: https://facebook.com/hrkeni
+  link: http://hrkeni.me
+
+sharing_links:
+  Twitter: "#1DA1F2"
+  facebook: "#3B5998"
+  Google+: "#DC4E41"
+  Pinterest: "#BD081C"
+  LinkedIn: "#0077B5"
+  tumblr: "#36465D"
+  Reddit: "#FF4500"
+  Hacker News: "#ff6600"
+  Designer News: "#2D72D9"
+  Email: ""
