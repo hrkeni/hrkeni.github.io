@@ -79,8 +79,8 @@ description: "I'm Harshith Keni, a software developer that lives in Sioux Falls,
 url: "http://hrkeni.me" # Site url, also used in jekyll-seo-tag
 repo: "https://github.com/hrkeni/hrkeni.github.io"
 email: "mail@hrkeni.me"
-# disqus: "alembic-1"
-# avatarurl: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
+disqus: "hrkeni"
+avatarurl: "https://secure.gravatar.com/avatar/49852433dcd70d90f1a10d75728d1ae8" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
 
 # 8. Site navigation
 navigation_header:
